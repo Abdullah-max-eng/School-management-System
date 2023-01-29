@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="793.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagements.fp.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="341.0" layoutY="275.0" prefHeight="2.0" prefWidth="121.0" text="Sign In ">
+         <font>
+            <Font name="Century" size="32.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmailSIN" focusColor="#0d0c0c" labelFloat="true" layoutX="297.0" layoutY="340.0" prefHeight="34.0" prefWidth="217.0" promptText="Email">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <cursor>
+         
+         </cursor>
+         <unFocusColor>
+            <RadialGradient centerX="0.4944444444444444" centerY="0.49047619047619057" focusAngle="33.69" radius="0.6162790697674418">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <JFXButton fx:id="SignInBtn" buttonType="RAISED" layoutX="333.0" layoutY="494.0" onAction="#btnSignin" prefHeight="34.0" prefWidth="131.0" stylesheets="@Button.css" text="Sign In" textFill="#050505">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="0.40476190476190477" endY="1.0" startY="0.9857142857142858">
+               <stops>
+                  <Stop color="#302f30" />
+                  <Stop color="#302f30" offset="0.007662835249042145" />
+                  <Stop color="#2e2d2e78" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPasswordSIN" labelFloat="true" layoutX="300.0" layoutY="421.0" prefHeight="34.0" prefWidth="217.0" promptText="Password">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+         <focusColor>
+            <RadialGradient centerX="0.4944444444444444" centerY="0.49047619047619057" focusAngle="33.69" radius="0.6162790697674418">
+               <stops>
+                  <Stop color="#1e1c1e" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </focusColor>
+         <unFocusColor>
+            <RadialGradient centerX="0.49999999999999994" centerY="0.5047619047619047" focusAngle="33.69" radius="0.616279069767442">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#fff7f7" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXPasswordField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="317.0" layoutY="585.0" prefHeight="34.0" prefWidth="217.0" text="Dont have an account?">
+         <font>
+            <Font name="Centaur" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="NoaccountSignup" buttonType="RAISED" layoutX="551.0" layoutY="586.0" onAction="#SignupNExtp" prefHeight="34.0" prefWidth="131.0" stylesheets="@Button.css" text="Sign Up" textFill="#050505">
+         <font>
+            <Font name="Centaur" size="19.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="0.40476190476190477" endY="1.0" startY="0.9857142857142858">
+               <stops>
+                  <Stop color="#302f30" />
+                  <Stop color="#302f30" offset="0.007662835249042145" />
+                  <Stop color="#2e2d2e78" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="162.0" layoutY="93.0" prefHeight="88.0" prefWidth="527.0" text="School Management System">
+         <font>
+            <Font name="Centaur" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="329.0" layoutX="382.0" layoutY="639.0" smooth="false" startX="-279.0" strokeWidth="2.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.01904761904761905">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Line>
+      <FontAwesomeIcon glyphName="USER" layoutX="360.0" layoutY="259.0" size="7em" />
+      <ImageView fitHeight="37.0" fitWidth="33.0" layoutX="234.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@email.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIcon glyphName="KEY" layoutX="234.0" layoutY="450.0" size="3em" wrappingWidth="32.99999280273914" />
+   </children>
+</AnchorPane>

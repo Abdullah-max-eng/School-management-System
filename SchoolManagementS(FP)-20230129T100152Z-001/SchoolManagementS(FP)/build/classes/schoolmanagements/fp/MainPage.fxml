@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleRoleDescription="link" prefHeight="705.0" prefWidth="793.0" stylesheets="@HomepageStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagements.fp.MainPageController">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="101.0" prefWidth="607.0" text="Welcome to the School Management System!" textFill="#0a0a0a">
+         <font>
+            <Font name="Centaur" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="71.0" prefHeight="58.0" prefWidth="321.0" text="Choose the category you want to visit" textFill="#0a0a0a">
+         <font>
+            <Font name="Centaur" size="22.0" />
+         </font>
+      </Label>
+      <Accordion layoutY="147.0" />
+      <JFXButton fx:id="ManagersBTN" layoutX="107.0" layoutY="169.0" onAction="#mangersCtg" prefHeight="58.0" prefWidth="600.0" stylesheets="@Button.css" text="Managers " textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="30.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ffffffc6" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+       
+      </JFXButton>
+      <JFXButton fx:id="teachersBTN" layoutX="107.0" layoutY="299.0" onAction="#teachersCTG" prefHeight="58.0" prefWidth="600.0" stylesheets="@Button.css" text="Teachers" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="29.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      
+      </JFXButton>
+      <JFXButton fx:id="janitorsBTN" layoutX="106.0" layoutY="368.0" onAction="#janitorsCTG" prefHeight="58.0" prefWidth="600.0" stylesheets="@Button.css" text="Janitors" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="29.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+       
+      </JFXButton>
+      <JFXButton fx:id="GuardsBTN" layoutX="107.0" layoutY="436.0" onAction="#GuardsCTG" prefHeight="58.0" prefWidth="600.0" stylesheets="@Button.css" text="Guards" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="29.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+       
+         <effect>
+            <ColorInput>
+               <paint>
+                  <RadialGradient centerX="0.5" centerY="0.49047619047619045" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </paint>
+            </ColorInput>
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="StudentsBTN" layoutX="106.0" layoutY="233.0" onAction="#studentsCTG" prefHeight="58.0" prefWidth="600.0" stylesheets="@Button.css" text="Students " textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Centaur" size="29.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5277777777777778" centerY="0.5285714285714286" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+       
+      </JFXButton>
+      <JFXButton fx:id="LogOut" layoutX="12.0" layoutY="644.0" onAction="#LogoutfromMianpage" prefHeight="40.0" prefWidth="81.0" stylesheets="@Button.css" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="17.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ffffffc6" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+        
+      </JFXButton>
+      <ImageView fitHeight="172.0" fitWidth="249.0" layoutX="282.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dataschool.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="HyperFacebook" layoutX="708.0" layoutY="673.0" onAction="#FacebookHyperlink" prefHeight="5.0" prefWidth="12.0" />
+      <ImageView fx:id="fbHyperlinkImage" accessibleRole="HYPERLINK" fitHeight="49.0" fitWidth="57.0" layoutX="714.0" layoutY="650.0" onMouseClicked="#imageFBHyper" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FBLOGO.png" />
+         </image>
+        
+      </ImageView>
+    
+   </children>
+</AnchorPane>

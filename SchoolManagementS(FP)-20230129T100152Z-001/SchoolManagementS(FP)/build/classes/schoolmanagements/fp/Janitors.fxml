@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="793.0" stylesheets="@StudentsStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagements.fp.JanitorsController">
+   <children>
+      <TableView fx:id="JanitorsTABLE" layoutX="-2.0" layoutY="78.0" onMouseClicked="#getTheSelectedRow" prefHeight="377.0" prefWidth="793.0">
+         <columns>
+            <TableColumn fx:id="JanitorIDColumn" prefWidth="36.999969482421875" text="ID" />
+            <TableColumn fx:id="JanitorNameColumn" prefWidth="78.0" text="Name" />
+            <TableColumn fx:id="JanitorEmailColumn" prefWidth="107.0" text="Email" />
+            <TableColumn fx:id="JanitorAddressColumn" prefWidth="117.0" text="Address" />
+            <TableColumn fx:id="JanitorPhoneColumn" prefWidth="91.0" text="Phone" />
+            <TableColumn fx:id="JanitWorkedHperW" prefWidth="170.0" text="Worked Hourse/Week" />
+            <TableColumn fx:id="WagesPerHour" minWidth="0.0" prefWidth="101.0" text="Wages/hour" />
+            <TableColumn fx:id="NetSalary" prefWidth="88.0" text="Net Salary" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="AddJanitorButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="35.0" layoutY="639.0" onAction="#AddButtonJanitor" prefHeight="36.0" prefWidth="134.0" stylesheets="@Button.css" text="Add Janitor" textFill="#fff8f8">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="RemoveJanitorButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="214.0" layoutY="639.0" onAction="#RemoveButtonJanitor" prefHeight="37.0" prefWidth="152.0" stylesheets="@Button.css" text="Remove Janitor" textFill="#fff8f8">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="ShowJanitorButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="420.0" layoutY="637.0" onAction="#ShowButtonJanitor" prefHeight="37.0" prefWidth="143.0" stylesheets="@Button.css" text="Show Janitor" textFill="#fff8f8">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="updateJanitorButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="613.0" layoutY="636.0" onAction="#UpdateButtonJanitor" prefHeight="36.0" prefWidth="143.0" stylesheets="@Button.css" text="Update Janitor" textFill="#fff8f8">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="idJanitortxt" alignment="CENTER" focusColor="#717b9a" layoutX="78.0" layoutY="467.0" prefHeight="26.0" prefWidth="72.0" promptText="ID" style="-fx-background-color: white;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="nameJanitortxt" alignment="CENTER" focusColor="#717b9a" layoutX="167.0" layoutY="466.0" promptText="Name" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="emailJanitortxt" alignment="CENTER" focusColor="#717b9a" layoutX="350.0" layoutY="466.0" prefHeight="28.0" prefWidth="188.0" promptText="Email" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="addressJanitortxt" alignment="CENTER" focusColor="#717b9a" layoutX="551.0" layoutY="466.0" prefHeight="28.0" prefWidth="152.0" promptText="Address" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="WorkedHoursWTXT" alignment="CENTER" focusColor="#717b9a" layoutX="182.0" layoutY="550.0" promptText="Working Hours /W" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="wagesPerHourTXT" alignment="CENTER" focusColor="#717b9a" layoutX="396.0" layoutY="548.0" promptText="Wages/Hour" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="7.0" layoutY="469.0" prefHeight="25.0" prefWidth="63.0" text="Data:">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="NetSalaryTXT" alignment="CENTER" disable="true" editable="false" focusColor="#717b9a" layoutX="614.0" layoutY="548.0" prefHeight="26.0" prefWidth="134.0" promptText="Net Salary" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="JanitorBackButton" buttonType="RAISED" layoutX="14.0" layoutY="11.0" onAction="#GoBackFromJanitor" prefHeight="37.0" prefWidth="72.0" stylesheets="@Button.css" text="Back" textFill="#fceeee">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="3.0" prefHeight="73.0" prefWidth="689.0" text="Janitors' Records ">
+         <font>
+            <Font name="Century" size="47.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="ClearJanitorButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="715.0" layoutY="461.0" onAction="#ClearTXTJanitor" prefHeight="37.0" prefWidth="72.0" stylesheets="@Button.css" text="Clear" textFill="#fff8f8">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="phoneJanitortxt" alignment="CENTER" focusColor="#717b9a" layoutX="20.0" layoutY="550.0" prefHeight="26.0" prefWidth="111.0" promptText="phone" style="-fx-background-color: White;">
+         <unFocusColor>
+            <RadialGradient centerX="0.4666666666666667" centerY="0.4857142857142857" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="44.0" fitWidth="53.0" layoutX="624.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@janitors.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
